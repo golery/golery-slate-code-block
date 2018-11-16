@@ -1,6 +1,6 @@
 import Slate from 'slate';
+import { Editor } from 'slate-react';
 
-export default function(plugin, change) {
-    const schema = new Slate.Schema(plugin.schema);
-    return change.normalize(schema);
+export default function(plugin, editor) {
+    return editor.normalize();
 }

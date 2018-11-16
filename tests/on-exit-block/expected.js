@@ -7,7 +7,9 @@ export default (
             <code_block>
                 <code_line>Li</code_line>
             </code_block>
-            <paragraph />
+            <paragraph>
+                <text />
+            </paragraph>
             <code_block>
                 <code_line>ne 1</code_line>
                 <code_line>

@@ -1,5 +1,5 @@
-export default function(plugin, change) {
-    const newValue = plugin.changes.unwrapCodeBlock(change, 'paragraph');
+export default function(plugin, editor) {
+    const newValue = plugin.changes.unwrapCodeBlock(editor, 'paragraph');
 
     return newValue;
 }

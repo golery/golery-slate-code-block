@@ -1,3 +1,3 @@
-export default function(plugin, change) {
-    return plugin.changes.wrapCodeBlock(change);
+export default function(plugin, editor) {
+    return plugin.changes.wrapCodeBlock(editor);
 }

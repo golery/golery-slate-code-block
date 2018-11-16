@@ -8,19 +8,17 @@ import hyperprint from 'slate-hyperprint';
 import EditCode from '../lib';
 
 const PLUGIN = EditCode();
-const SCHEMA = Slate.Schema.create({
-    plugins: [PLUGIN]
-});
 
 function deserializeValue(value) {
-    return Slate.Value.fromJSON(
+    return new Slate.Editor({
+      plugins: [PLUGIN],
+      value: Slate.Value.fromJSON(
         {
-            document: value.document,
-            selection: value.selection,
-            schema: SCHEMA
-        },
-        { normalize: false }
-    );
+          selection: value.selection,
+          document: value.document,
+        }
+      )
+    });
 }
 
 describe('slate-edit-code', () => {
@@ -39,9 +37,7 @@ describe('slate-edit-code', () => {
 
             const runChange = require(path.resolve(dir, 'change.js')).default;
 
-            const valueInput = deserializeValue(input);
-
-            const newChange = runChange(PLUGIN, valueInput.change());
+            const newChange = runChange(PLUGIN, deserializeValue(input));
 
             if (expected) {
                 const newDoc = hyperprint(newChange.value.document, {
