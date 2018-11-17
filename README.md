@@ -3,7 +3,7 @@
 [![NPM version](https://badge.fury.io/js/slate-code-block.svg)](http://badge.fury.io/js/slate-code-block)
 [![Linux Build Status](https://travis-ci.org/linonetwo/slate-code-block.png?branch=master)](https://travis-ci.org/linonetwo/slate-code-block)
 
-A Slate plugin to handle code block editing. This is a fork from linonetwo/slate-code-block, [see why](https://github.com/GitbookIO/slate/blob/master/Readme.md).
+A Slate plugin to handle code block editing, supports 0.40 of SlateJS . This is a fork from GitbookIO/slate-edit-code, [see why](https://github.com/GitbookIO/slate/blob/master/Readme.md).
 
 ### Install
 
