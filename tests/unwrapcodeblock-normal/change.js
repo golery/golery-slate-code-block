@@ -1,3 +1,3 @@
-export default function(plugin, change) {
-    return plugin.changes.unwrapCodeBlock(change, 'paragraph');
+export default function(plugin, editor) {
+    return plugin.changes.unwrapCodeBlock(editor, 'paragraph');
 }

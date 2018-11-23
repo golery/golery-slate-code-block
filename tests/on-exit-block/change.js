@@ -1,5 +1,5 @@
 import simulateKey from '../simulate-key';
 
-export default function(plugin, change) {
-    return plugin.onKeyDown(simulateKey('mod+enter'), change, {});
+export default function(plugin, editor) {
+    return plugin.onKeyDown(simulateKey('mod+enter'), editor, () => {});
 }

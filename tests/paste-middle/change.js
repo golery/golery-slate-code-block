@@ -1,4 +1,4 @@
-export default function(plugin, change) {
+export default function(plugin, editor) {
     return plugin.onPaste(
         {
             preventDefault() {},
@@ -9,7 +9,7 @@ export default function(plugin, change) {
                 getData: () => 'Yes\nNo\nQuestion?'
             }
         },
-        change,
-        {}
+        editor,
+        () => {}
     );
 }

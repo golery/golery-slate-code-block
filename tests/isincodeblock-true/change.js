@@ -1,7 +1,7 @@
 import assert from 'assert';
 
-export default function(plugin, change) {
-    assert.equal(plugin.utils.isInCodeBlock(change.value), true);
+export default function(plugin, editor) {
+    assert.equal(plugin.utils.isInCodeBlock(editor.value), true);
 
-    return change;
+    return editor;
 }
