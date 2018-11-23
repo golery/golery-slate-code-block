@@ -1,7 +1,7 @@
 {
-  "name": "slate-code-block",
+  "name": "golery-slate-code-block",
   "description": "A Slate plugin to handle code blocks editing. Fork from GitbookIO/slate-edit-code",
-  "version": "0.16.0",
+  "version": "0.16.0-golery.0",
   "license": "Apache-2.0",
   "repository": "git://github.com/linonetwo/slate-edit-code.git",
   "main": "./dist/index.js",
