@@ -47,7 +47,7 @@ class Example extends React.Component<*, *> {
         const { value } = this.state;
 
         this.onChange(
-            plugin.changes.toggleCodeBlock(value.change(), 'paragraph').focus()
+            plugin.changes.toggleCodeBlock(this.editor, 'paragraph').focus()
         );
     };
 
@@ -67,6 +67,7 @@ class Example extends React.Component<*, *> {
                     value={value}
                     onChange={this.onChange}
                     renderNode={renderNode}
+                    ref={ref => this.editor = ref}
                 />
             </div>
         );
